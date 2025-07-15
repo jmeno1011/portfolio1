@@ -9,7 +9,8 @@
       "Power BI",
       "HTML",
       "CSS"
-    ]
+    ],
+    "images":["/projects/1/image1.png","/projects/1/image2.png","/projects/1/image3.png","/projects/1/image4.png"]
   },
   {
     "Title": "Cardiovascular Disease Analysis WebSite",
@@ -26,7 +27,8 @@
       "Javascript",
       "Python",
       "ChartJS"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Patients monitoring dashboard",
@@ -39,7 +41,8 @@
       "MySQL",
       "Express",
       "Javascript"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Medication Recommendation System",
@@ -54,7 +57,8 @@
       "Javascript",
       "D3",
       "ApexCharts"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Counselor's Dashboard",
@@ -69,7 +73,8 @@
       "ApexCharts",
       "SWR",
       "FCM"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "A website that analyses emotions based on chat messages",
@@ -87,7 +92,8 @@
       "AWS EC2",
       "AWS RDS",
       "AWS Lambda"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Questionnaire Website",
@@ -102,7 +108,8 @@
       "vercel",
       "@vercel/analytics",
       "firebase-realtime_database"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Questionnaire Monitoring Website",
@@ -115,7 +122,8 @@
       "Typescript",
       "vercel",
       "firebase-realtime_database"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "App User Management and Data Monitoring System",
@@ -128,7 +136,8 @@
       "AWS S3",
       "AWS Cloudfront",
       "Github-Actions CI/CD"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "User Monitoring System for Depression Management",
@@ -141,7 +150,8 @@
       "AWS S3",
       "AWS Cloudfront",
       "Github-Actions CI/CD"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Company’s MVP launch project",
@@ -155,7 +165,8 @@
       "AWS S3",
       "AWS Cloudfront",
       "Github-Actions CI/CD"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Company’s MVP → Production",
@@ -169,7 +180,8 @@
       "AWS S3",
       "AWS Cloudfront",
       "Github-Actions CI/CD"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Digital Therapeutics Project(for clinical use)",
@@ -183,7 +195,8 @@
       "Shadcn",
       "Tanstack-table",
       "Azure App services Web/Apps"
-    ]
+    ],
+    "images":[""]
   },
   {
     "Title": "Digital Therapeutics Project Start",

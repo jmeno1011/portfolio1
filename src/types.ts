@@ -12,4 +12,5 @@ export interface PortfolioProject {
   // TODO :: refactor
   "My Notes": string;
   "Tech Stack": string[];
+  images: string[];
 }

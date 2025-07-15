@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-// import ImageGallery from './ImageGallery';
+import ImageGallery from './ImageGallery';
 import { Badge } from "./ui/badge";
 import { Code, Sparkles, Zap } from "lucide-react";
 import {
@@ -60,7 +60,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </CardHeader>
 
         <CardContent className="flex-1 flex flex-col relative z-10">
-          {/* <ImageGallery images={project.images} projectTitle={project.title} /> */}
+          <ImageGallery images={project.images} projectTitle={project.Title} />
 
           <div className="mt-6 flex-1">
             <div className="flex items-center mb-2">
@@ -115,15 +115,15 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               </DialogHeader>
               <div className="space-y-8">
                 <div className="grid grid-cols-2 gap-4">
-                  {/* {project.images.map((image, imageIndex) => (
+                  {project.images?.map((image, imageIndex) => (
                     <div key={imageIndex} className="group overflow-hidden rounded-lg">
                       <img
                         src={image || "/placeholder.svg"}
-                        alt={`${project.title} screenshot ${imageIndex + 1}`}
+                        alt={`${project.Title} screenshot ${imageIndex + 1}`}
                         className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
-                  ))} */}
+                  ))}
                 </div>
                 <div className="space-y-6">
                   <div>
