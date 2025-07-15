@@ -17,7 +17,9 @@ export default function Home() {
             My Projects
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            {"Here are some of the projects I've worked on, showcasing my journey as a developer and the technologies I've mastered along the way. Each project represents a unique challenge and learning experience."}
+            {
+              "Here are some of the projects I've worked on, showcasing my journey as a developer and the technologies I've mastered along the way. Each project represents a unique challenge and learning experience."
+            }
           </p>
         </div>
 
@@ -39,8 +41,12 @@ export default function Home() {
                 Developer KIM DO HYOUNG
               </span>
             </div>
-            <p className="text-gray-500 mb-4">Crafting digital experiences with passion and precision</p>
-            <p className="text-sm text-gray-400">&copy; 2024 John Developer. All rights reserved.</p>
+            <p className="text-gray-500 mb-4">
+              Crafting digital experiences with passion and precision
+            </p>
+            <p className="text-sm text-gray-400">
+              &copy; 2024 John Developer. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
