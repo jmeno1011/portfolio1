@@ -1,0 +1,202 @@
+[
+  {
+    "Title": "Peptide visualize",
+    "Period": "2021.04 ~ 2021.07",
+    "Overview": "This project is focused on visualizing the connection between peptide data and depression.",
+    "My Notes": "My first project as a front-end developer involved visualizing the company's existing data.",
+    "Tech Stack": [
+      "AWS EC2",
+      "Power BI",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "Title": "Cardiovascular Disease Analysis WebSite",
+    "Period": "2021.07 ~ 2021.11",
+    "Overview": "Implemented two levels of cardiovascular risk assessment: a simple approach using survey data only, and a detailed approach that integrates blood test results with user responses for more accurate diagnostics.",
+    "My Notes": "Developed a full-stack responsive web",
+    "Tech Stack": [
+      "AWS EC2",
+      "AWS RDS",
+      "Express",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Python",
+      "ChartJS"
+    ]
+  },
+  {
+    "Title": "Patients monitoring dashboard",
+    "Period": "2021.12 ~ 2022.02",
+    "Overview": "This is a web application for monitoring patient conditions",
+    "My Notes": "It was my first React project",
+    "Tech Stack": [
+      "React",
+      "Webpack",
+      "MySQL",
+      "Express",
+      "Javascript"
+    ]
+  },
+  {
+    "Title": "Medication Recommendation System",
+    "Period": "2022.03 ~ 2022.08",
+    "Overview": "Built a personalized treatment recommendation system that suggests medication and care plans based on patient data.",
+    "My Notes": "I also used D3.js to create custom diagrams that visualized relationships and patterns based on patient data.",
+    "Tech Stack": [
+      "React",
+      "Webpack",
+      "MySQL",
+      "Express",
+      "Javascript",
+      "D3",
+      "ApexCharts"
+    ]
+  },
+  {
+    "Title": "Counselor's Dashboard",
+    "Period": "2022.09 ~ 2022.10",
+    "Overview": "The dashboard used by psychological counselors includes features for appointment and schedule management, as well as student management.",
+    "My Notes": "I handled both full-stack development and design within just one month.",
+    "Tech Stack": [
+      "React",
+      "MySQL",
+      "Express",
+      "Javascript",
+      "ApexCharts",
+      "SWR",
+      "FCM"
+    ]
+  },
+  {
+    "Title": "A website that analyses emotions based on chat messages",
+    "Period": "2022.08 ~ 2023.03",
+    "Overview": "chatbot-based sentiment analysis platform.",
+    "My Notes": "Optimized performance by controlling the volume of visualized data and migrated the codebase from JavaScript to TypeScript for better maintainability and type safety.",
+    "Tech Stack": [
+      "React",
+      "MySQL",
+      "Express",
+      "Javascript",
+      "Typescript",
+      "ApexCharts",
+      "react-d3-cloud",
+      "AWS EC2",
+      "AWS RDS",
+      "AWS Lambda"
+    ]
+  },
+  {
+    "Title": "Questionnaire Website",
+    "Period": "2023.04 ~ 2023.05",
+    "Overview": "This project is a web-based service that evaluates a user’s level of depression through a questionnaire and recommends personalized daily activities as coping strategies.",
+    "My Notes": "This was my first project using Next.js. I initially built it with JavaScript and later migrated to TypeScript to improve code reliability and maintainability. I also refactored the codebase when integrating i18n to support multiple languages.",
+    "Tech Stack": [
+      "NextJS_13",
+      "Javascript",
+      "Typescript",
+      "i18n(Korean&English)",
+      "vercel",
+      "@vercel/analytics",
+      "firebase-realtime_database"
+    ]
+  },
+  {
+    "Title": "Questionnaire Monitoring Website",
+    "Period": "2023.05 ~ 2023.06",
+    "Overview": "This project visualizes user responses collected from a previously developed Questionnaire Website.",
+    "My Notes": "This project also migrated Javascript to Typescript",
+    "Tech Stack": [
+      "NextJS_13",
+      "Javascript",
+      "Typescript",
+      "vercel",
+      "firebase-realtime_database"
+    ]
+  },
+  {
+    "Title": "App User Management and Data Monitoring System",
+    "Period": "2023.06 ~ 2023.08",
+    "Overview": "This project involved building two web platforms – an Admin Site and a Client Site – to support a mobile app that collects biometric data and conducts user surveys.The Admin Site enables account registration and user search, while the Client Site provides tools for managing app users, creating surveys, monitoring data collection, downloading user data, and configuring collection intervals.",
+    "My Notes": "I led the architectural design of this project and collaborated directly with a hospital to align the system with real clinical workflows.",
+    "Tech Stack": [
+      "React",
+      "Typescript",
+      "AWS S3",
+      "AWS Cloudfront",
+      "Github-Actions CI/CD"
+    ]
+  },
+  {
+    "Title": "User Monitoring System for Depression Management",
+    "Period": "2023.09 ~ 2023.12",
+    "Overview": "Built a web-based monitoring dashboard tailored for internal R&D data tracking and visualization.",
+    "My Notes": "First experience embedding a web app into Android using WebView.",
+    "Tech Stack": [
+      "React",
+      "Typescript",
+      "AWS S3",
+      "AWS Cloudfront",
+      "Github-Actions CI/CD"
+    ]
+  },
+  {
+    "Title": "Company’s MVP launch project",
+    "Period": "2024.01 ~ 2024.02",
+    "Overview": "An MVP project designed for counselors at a psychological counseling center, built to support their workflow and client sessions.",
+    "My Notes": "Adopted Vite for faster builds and had my first design collaboration using Figma.",
+    "Tech Stack": [
+      "React",
+      "Vite",
+      "ApexCharts",
+      "AWS S3",
+      "AWS Cloudfront",
+      "Github-Actions CI/CD"
+    ]
+  },
+  {
+    "Title": "Company’s MVP → Production",
+    "Period": "2024.03 ~ 2024.08",
+    "Overview": "Launched the production version of a previous MVP project and operated the service for six months.",
+    "My Notes": "Led development for the production version of a counseling dashboard, collaborating with a new backend engineer and removing hard-coded logic from the MVP",
+    "Tech Stack": [
+      "React",
+      "Vite",
+      "ApexCharts",
+      "AWS S3",
+      "AWS Cloudfront",
+      "Github-Actions CI/CD"
+    ]
+  },
+  {
+    "Title": "Digital Therapeutics Project(for clinical use)",
+    "Period": "2024.09 ~ 2025.03",
+    "Overview": "Developed a dual-purpose web application: a backoffice for internal use and a clinical dashboard for hospitals to monitor patients during clinical trials.",
+    "My Notes": "Migrated from `module.css` to Tailwind CSS, and transitioned the cloud infrastructure from Aws to Azure.",
+    "Tech Stack": [
+      "React",
+      "Typescript",
+      "TailwindCss",
+      "Shadcn",
+      "Tanstack-table",
+      "Azure App services Web/Apps"
+    ]
+  },
+  {
+    "Title": "Digital Therapeutics Project Start",
+    "Period": "2025.07 ~ present",
+    "Overview": "Developed a dual-purpose web application: a backoffice for internal use and a clinical dashboard for hospitals to monitor patients during clinical trials.",
+    "My Notes": "In production ( Live ) → private",
+    "Tech Stack": [
+      "React",
+      "Typescript",
+      "TailwindCss",
+      "Shadcn",
+      "Tanstack-table",
+      "Azure App services Web/Apps"
+    ]
+  }
+]
