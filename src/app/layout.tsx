@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "David Kim",
+  title: "KIM DO HYOUNG",
   description: "KIM DO HYOUNG(David Kim) Portfolio",
 };
 
