@@ -11,6 +11,7 @@ import {
 import ImageGallery from './ImageGallery';
 import { Badge } from "./ui/badge";
 import { Code, Sparkles, Zap } from "lucide-react";
+import Image from "next/image"
 import {
   Dialog,
   DialogContent,
@@ -19,6 +20,7 @@ import {
   DialogTrigger,
 } from "./ui/dialog";
 import { Button } from "./ui/button";
+import { DialogDescription } from "@radix-ui/react-dialog";
 
 interface ProjectCardProps {
   project: PortfolioProject;
@@ -54,7 +56,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               {project.Period}
             </Badge>
           </div>
-          <CardDescription className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+          <CardDescription className="text-sm text-gray-600 line-clamp-3 group-hover:text-gray-700 transition-colors duration-300">
             {project.Overview}
           </CardDescription>
         </CardHeader>
@@ -67,8 +69,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               <Sparkles className="h-4 w-4 text-purple-500 mr-2" />
               <h4 className="font-semibold text-sm text-gray-800">My Notes</h4>
             </div>
-            <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-              {project["My Notes"]}
+            <p className="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-2">
+              {project.MyNotes}
             </p>
           </div>
 
@@ -80,7 +82,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               </h4>
             </div>
             <div className="flex flex-wrap gap-2">
-              {project["Tech Stack"].map((tech, techIndex) => (
+              {project.TechStack.map((tech, techIndex) => (
                 <Badge
                   key={techIndex}
                   variant="secondary"
@@ -94,12 +96,13 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="w-full mt-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300">
+              <Button className="w-full mt-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 cursor-pointer">
                 <Zap className="h-4 w-4 mr-2" />
                 View Details
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto border-0 bg-white/95 backdrop-blur-md">
+            {/* max-w-4xl === max-w-[896px] */}
+            <DialogContent className="sm:max-w-4xl w-[90vw] h-[80vh] overflow-y-auto border-0 bg-white/95 backdrop-blur-md">
               <DialogHeader>
                 <DialogTitle className="flex items-center justify-between text-2xl">
                   <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -112,15 +115,21 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                     {project.Period}
                   </Badge>
                 </DialogTitle>
+                <DialogDescription className="sr-only">
+                  No Description
+                </DialogDescription>
               </DialogHeader>
               <div className="space-y-8">
                 <div className="grid grid-cols-2 gap-4">
                   {project.images?.map((image, imageIndex) => (
-                    <div key={imageIndex} className="group overflow-hidden rounded-lg">
-                      <img
+                    <div key={imageIndex} className="group overflow-hidden rounded-[8px] border-[1px] border-gray-200">
+                      <Image
                         src={image || "/placeholder.svg"}
                         alt={`${project.Title} screenshot ${imageIndex + 1}`}
-                        className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                        width={600}
+                        height={192}
+                        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                        priority={imageIndex === 0}
                       />
                     </div>
                   ))}
@@ -141,7 +150,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                       My Notes
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      {project["My Notes"]}
+                      {project.MyNotes}
                     </p>
                   </div>
                   <div>
@@ -150,7 +159,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                       Tech Stack
                     </h3>
                     <div className="flex flex-wrap gap-3">
-                      {project["Tech Stack"].map((tech, techIndex) => (
+                      {project.TechStack.map((tech, techIndex) => (
                         <Badge
                           key={techIndex}
                           variant="secondary"

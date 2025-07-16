@@ -9,8 +9,7 @@ export interface PortfolioProject {
   Title: string;
   Period: string;
   Overview: string;
-  // TODO :: refactor
-  "My Notes": string;
-  "Tech Stack": string[];
+  MyNotes: string;
+  TechStack: string[];
   images: string[];
 }

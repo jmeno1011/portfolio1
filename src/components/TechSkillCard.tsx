@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { TechSkill } from "@/types";
 import React, { useEffect, useState } from "react";
 import { Badge } from "./ui/badge";

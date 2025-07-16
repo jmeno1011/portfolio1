@@ -1,13 +1,14 @@
 "use client";
+import { useEffect, useState } from "react";
 import TechStackSection from "@/components/TechStackSection";
 import { Code, ExternalLink, FileText, Github, Mail, MapPin, Phone } from "lucide-react";
-import projects from "../../portfolio_projects.json";
+import portfolioProjects from "../../portfolio_projects.json";
 import ProjectCard from "@/components/ProjectCard";
-import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const [headerVisible, setHeaderVisible] = useState(false)
+  const projects = [...portfolioProjects].reverse();
 
   useEffect(() => {
     setHeaderVisible(true)
@@ -97,8 +98,6 @@ export default function Home() {
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Tech Stack Section */}
         <TechStackSection />
-
-        {/* Projects Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-6">
             My Projects
