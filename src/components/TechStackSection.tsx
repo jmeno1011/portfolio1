@@ -10,7 +10,7 @@ export default function TechStackSection() {
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
           {
-            "Every skill here reflects something I’ve built, learned, and grown with. I’m always exploring new technologies to solve real problems."
+            "Every skill here reflects something I've built, learned, and grown with. I'm always exploring new technologies to solve real problems."
           }
         </p>
         <div className="flex flex-wrap justify-center gap-2 mb-8">
