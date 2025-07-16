@@ -17,7 +17,7 @@ export default function ImageGallery({ images, projectTitle }:ImageGalleryProps 
   }
 
   return (
-    <div className="relative group overflow-hidden rounded-xl">
+    <div className="relative group overflow-hidden rounded-xl border-[1px] border-gray-100">
       <div className="relative h-64 overflow-hidden">
         <Image
           src={images?.[currentImage] || "/placeholder.svg"}
