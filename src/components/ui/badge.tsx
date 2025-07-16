@@ -17,6 +17,14 @@ const badgeVariants = cva(
           "border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
           "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
+        "project-period":
+          "border-purple-200 text-purple-700 bg-purple-50 group-hover:border-purple-300 group-hover:bg-purple-100 transition-all duration-300",
+        "tech-stack":
+          "bg-gradient-to-r from-gray-100 to-gray-200 hover:from-purple-100 hover:to-blue-100 border-0 transition-all duration-300 hover:scale-105",
+        "tech-stack-detail":
+          "px-3 py-1 bg-gradient-to-r from-purple-100 to-blue-100 hover:from-purple-200 hover:to-blue-200 border-0 transition-all duration-300",
+        "tech-category":
+          "transition-all duration-300 border-gray-200 text-gray-600 hover:border-purple-300 hover:text-purple-600",
       },
     },
     defaultVariants: {

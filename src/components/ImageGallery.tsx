@@ -16,12 +16,14 @@ export default function ImageGallery({ images, projectTitle }:ImageGalleryProps 
     setCurrentImage((prev) => (prev - 1 + images.length) % images.length)
   }
 
+  const buttonClasses = "bg-white/90 hover:bg-white backdrop-blur-sm border-white/20 shadow-lg transform hover:scale-110 transition-all duration-200";
+
   return (
     <div className="relative group overflow-hidden rounded-xl border-[1px] border-gray-100">
       <div className="relative h-64 overflow-hidden">
         <Image
           src={images?.[currentImage] || "/placeholder.svg"}
-          alt={`${projectTitle} screenshot ${currentImage + 1}`}
+          alt={`Screenshot ${currentImage + 1} for ${projectTitle}`}
           width={400}
           height={300}
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -35,7 +37,8 @@ export default function ImageGallery({ images, projectTitle }:ImageGalleryProps 
           variant="outline"
           size="icon"
           onClick={prevImage}
-          className="bg-white/90 hover:bg-white backdrop-blur-sm border-white/20 shadow-lg transform hover:scale-110 transition-all duration-200"
+          className={buttonClasses}
+          aria-label="Previous image"
         >
           <ChevronLeft className="h-4 w-4" />
         </Button>
@@ -43,22 +46,27 @@ export default function ImageGallery({ images, projectTitle }:ImageGalleryProps 
           variant="outline"
           size="icon"
           onClick={nextImage}
-          className="bg-white/90 hover:bg-white backdrop-blur-sm border-white/20 shadow-lg transform hover:scale-110 transition-all duration-200"
+          className={buttonClasses}
+          aria-label="Next image"
         >
           <ChevronRight className="h-4 w-4" />
         </Button>
       </div>
 
       <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {images?.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentImage(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentImage ? "bg-white scale-125 shadow-lg" : "bg-white/60 hover:bg-white/80"
-            }`}
-          />
-        ))}
+        {images?.map((_, index) => {
+          const indicatorClasses = `w-2 h-2 rounded-full transition-all duration-300 ${
+            index === currentImage ? "bg-white scale-125 shadow-lg" : "bg-white/60 hover:bg-white/80"
+          }`;
+          return (
+            <button
+              key={index}
+              onClick={() => setCurrentImage(index)}
+              className={indicatorClasses}
+              aria-label={`Go to image ${index + 1}`}
+            />
+          );
+        })}
       </div>
     </div>
   )

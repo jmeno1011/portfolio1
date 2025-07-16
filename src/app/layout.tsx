@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KIM DO HYOUNG",
-  description: "KIM DO HYOUNG(David Kim) Portfolio",
+  title: "DO-HYOUNG KIM | Portfolio",
+  description: "DO HYOUNG KIM(David Kim) Portfolio",
 };
 
 export default function RootLayout({

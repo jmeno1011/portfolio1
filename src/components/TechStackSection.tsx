@@ -1,37 +1,5 @@
-import { Button } from "./ui/button";
-
-const categories = [
-  "AWS Cloudfront",
-  "AWS EC2",
-  "AWS Lambda",
-  "AWS RDS",
-  "AWS S3",
-  "ApexCharts",
-  "Azure App services Web/Apps",
-  "Azure Functions",
-  "CSS",
-  "ChartJS",
-  "D3",
-  "Express",
-  "FCM",
-  "Github-Actions CI/CD",
-  "HTML",
-  "Javascript",
-  "MySQL",
-  "NextJS_13",
-  "Power BI",
-  "Python",
-  "React",
-  "SWR",
-  "Shadcn",
-  "TailwindCss",
-  "Tanstack-table",
-  "Typescript",
-  "Vite",
-  "Webpack",
-  "i18n",
-  "vercel"
-];
+import { Badge } from "./ui/badge";
+import { techCategories } from "@/lib/tech-stack-data";
 
 export default function TechStackSection() {
   return (
@@ -42,30 +10,19 @@ export default function TechStackSection() {
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
           {
-            "Technologies and tools I've mastered throughout my development journey. Each skill represents hands-on experience and continuous learning."
+            "Every skill here reflects something I’ve built, learned, and grown with. I’m always exploring new technologies to solve real problems."
           }
         </p>
         <div className="flex flex-wrap justify-center gap-2 mb-8">
-          <Button
-            variant={"default"}
-            size="sm"
-            className={
-              "transition-all duration-300 bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg"
-            }
+          <Badge
+            className="text-sm bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg"
           >
             Full-Stack
-          </Button>
-          {categories.map((category) => (
-            <Button
-              key={category}
-              variant={"outline"}
-              size="sm"
-              className={
-                "ransition-all duration-300 border-gray-200 text-gray-600 hover:border-purple-300 hover:text-purple-600"
-              }
-            >
+          </Badge>
+          {techCategories.map((category) => (
+            <Badge key={category} variant="tech-category" className="text-sm">
               {category}
-            </Button>
+            </Badge>
           ))}
         </div>
       </div>
