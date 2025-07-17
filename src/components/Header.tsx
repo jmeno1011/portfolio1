@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { Code, ExternalLink, FileText, Github, Mail, MapPin, Phone } from "lucide-react";
+import { Code, ExternalLink, FileText, Github, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const contactInfo = [
@@ -12,6 +12,7 @@ const contactInfo = [
 const socialLinks = [
   { icon: Github, text: "GitHub", href: "https://github.com/jmeno1011", variant: "social" as const },
   { icon: ExternalLink, text: "LinkedIn", href: "https://www.linkedin.com/in/dohyoungkim1011/", variant: "social" as const },
+  { icon: Instagram, text: "Instagram", href: "https://www.instagram.com/paintingtono/", variant: "social" as const },
   { icon: FileText, text: "Resume", href: "https://rust-report-764.notion.site/Do-Hyoung-Kim-1c2f277a746780829203e37c82f0ac8c", variant: "default" as const },
 ];
 
